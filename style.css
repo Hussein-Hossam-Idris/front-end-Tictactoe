@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat+Subrayada&display=swap');
+
+body {
+    /* background-color: cadetblue !important; */
+}
+
+#playing-board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 30%;
+    margin: 20px auto 0px auto;
+    grid-gap: 20px;
+    
+}
+
+#playing-board div{
+    background-color: whitesmoke;
+    /* border: 1px solid black; */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 111px;
+    padding: 4px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 5px black;
+}
+
+#PlayerSpace {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#PlayerSpace div{
+    width: 20%;
+    font-size: larger;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    transition: 0.3s ease-in-out;
+    border-radius: 20px;
+}
+
+#title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 50px;
+}
+#title2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 80px;
+    color: white;
+}
+
+#reset {
+    margin: 0 auto;
+    background-color: white;
+    width: 10%;
+    border: none;
+    display: block;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 30px;
+}
+
+#start-game {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(41, 111, 151);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    flex-direction: column;
+}
+
+#start-game-btn {
+    height: 100px;
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+#who-won {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(41, 111, 151);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    display: none;    
+}
+#who-won-p {
+    font-size: 80px;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    color: white;
+    display: block;
+    margin-top: 20vh;
+}
+
+#who-won button {
+    margin: 30px auto;
+    height: 100px;
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+.Div {
+    transition: 0.2s ease-in-out;
+}
+
